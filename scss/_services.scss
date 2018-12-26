@@ -1,0 +1,43 @@
+#services{
+
+    .services-grid{
+        display: grid;
+        grid-gap: 1rem;
+        .services-col{
+            padding: 20px 30px;
+            background: white;
+            text-align: center;
+            border-top: 2px solid $blue-clr;
+
+            &:hover{
+                border-top: 2px solid $orange-clr;
+
+                .fa{
+                    color: $orange-clr;
+                }
+            }
+
+            
+
+            .service-logo{
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .fa{
+                    background: white;
+                    color: $blue-clr;
+                    padding: 10px;
+                    border-radius: 200%;
+                    cursor: pointer;
+
+                    &:hover{
+                        color: $orange-clr;
+                        @include easeOut();
+                    }
+                }
+            }
+        }
+    }
+}

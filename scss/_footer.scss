@@ -1,0 +1,54 @@
+// bottom footer of the document
+#main-footer{
+
+    .top-footer{
+        .footer-nav{
+            li{
+                list-style-type: none;
+                padding: 2px 0;
+
+                &:hover{
+                    .fa{
+                        color: $orange-clr;
+                        @include easeOut();
+                    }
+                }
+                a{
+                    color: $primary-clr;
+                    padding: 10px 0;
+
+                    &:hover{
+                        color: $orange-clr;
+                        text-decoration: none;
+                        @include easeOut();
+                    }
+                }
+                .fa{
+                    padding-right: 10px;
+                }
+            }
+
+            
+        }
+
+        h5{
+            margin-bottom: 20px;
+        }
+    }
+
+    .bottom-footer{
+        .footer-logo{
+            width: 300px;
+            margin: auto;
+        }
+    }
+
+    .social-icons{
+        margin-top: 20px;
+        .fa{
+            font-size: 1.2rem;
+            margin-right: 10px;
+            color: $primary-clr;
+        }
+    }
+}

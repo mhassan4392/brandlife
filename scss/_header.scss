@@ -1,0 +1,164 @@
+// top header of the document
+
+#main-header{
+    .main-header-grid{
+        display: grid;
+        align-items: center;
+
+        .logo-lg{
+            width: 200px;
+            margin: auto;
+        }
+        .logo-sm{
+            width: 300px;
+            margin: auto;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .search-menu{
+            display: none;
+            position: absolute;
+            right: 0;
+            width: 400px;
+            z-index: 11;
+            padding: 30px 10px 10px 10px;
+            background: white;
+            border-top: 2px solid $orange-clr;
+        }
+        
+
+        .header-logo{
+            grid-area: logo-area;
+        }
+        .header-nav{
+            grid-area: nav-area;
+            // border-top: 1px solid $primary-clr;
+
+            .nav-item{
+                padding: 10PX 30px;
+
+                a{
+                    color: $primary-clr;
+                    font-weight: 500;
+
+                    &:visited{
+                        color: $primary-clr;
+                    }
+                    &:hover{
+                        color: $orange-clr;
+                        text-decoration: none;
+                        @include easeOut();
+                    }
+                }
+            }
+        }
+        .header-icons{
+            grid-area: icons-area;
+            position: relative;
+            // border-top: 1px solid $primary-clr;
+
+            .nav-item{
+                padding: 10PX 10px;
+
+                a{
+                    color: $primary-clr;
+
+                    &:visited{
+                        color: $primary-clr;
+                    }
+                    &:hover{
+                        color: $blue-clr;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+    .navbar-menu{
+        z-index: 10;
+        display: none;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background: rgba(black, 0.4);
+
+        .small-menu{
+            width: 300px;
+            background: white;
+            height: 100%;
+            position: relative;
+
+            a{
+                color: $primary-clr;
+
+                &:visited{
+                    color: $primary-clr;
+                }
+                &:hover{
+                    color: $orange-clr;
+                    text-decoration: none;
+                }
+
+                .fa{
+                    padding: 5px;
+                }
+            }
+    
+            .logo{
+                width: 200px;
+                margin: auto;
+            }
+            .icons{
+                margin: auto;
+            }
+            .navbar-close-btn{
+                position: absolute;
+                top: 10px;
+                right: -40px;
+                background: white;
+                border-radius: 100px;
+                cursor: pointer;
+                &:hover{
+                    color: $orange-clr;
+                    background: #ddd;
+                }
+            }
+            .navbar-menu-links{
+                
+                a{
+                    color: $primary-clr;
+                    border-bottom: 1px solid $primary-clr;
+                    display: block;
+                    width: 100%;
+                    padding: 10px;
+                    &:visited{
+                        color: $primary-clr;
+                    }
+                    &:hover{
+                        color: $orange-clr;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .navbar-btn,.search-btn{
+        cursor: pointer;
+        .fa{
+            font-size: 1.5rem;
+        }
+    }
+
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+
+      .fa{
+          font-size: 1.1rem;
+      }
+}

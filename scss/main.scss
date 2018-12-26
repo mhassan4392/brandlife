@@ -1,0 +1,77 @@
+// import partials
+@import 'config';
+@import 'header';
+@import 'showcase';
+@import 'services';
+@import 'others';
+@import 'footer';
+@import 'mobile';
+
+
+// full document settings
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.bg-blue{
+    background: $blue-clr;
+    color: white;
+}
+.clr-blue{
+    color: $blue-clr;
+}
+.bg-orange{
+    background: $orange-clr;
+    color: white;
+}
+.clr-orange{
+    color: $orange-clr;
+}
+
+.bg-green{
+    background: $green-clr;
+    color: white;
+}
+.clr-green{
+    color: $green-clr;
+}
+
+.fa-facebook{
+    &:hover{
+        color: #3B5998 !important;
+    }
+}
+
+.fa-twitter{
+
+    &:hover{
+        color: #1DA1F2 !important;
+    }
+}
+
+.fa-instagram{
+
+    &:hover{
+        color: #fb3958 !important;
+    }
+}
+
+.fa-youtube{
+
+    &:hover{
+        color: #ff0000 !important;
+    }
+}
+
+.container1{
+    width: 90%;
+    margin: auto;
+}
+
+.slash{
+    width: 120px;
+    height: 2px;
+    background: $orange-clr;
+}

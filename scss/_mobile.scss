@@ -1,0 +1,79 @@
+
+// small size
+@include mediaSm{
+    .services-grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+// medium size
+@include mediaMd{
+    // Main Header
+    #main-header{
+        .main-header-grid{
+            grid-template-areas:
+            'nav-area logo-area icons-area';
+
+            .logo-lg,.main-navbar,.navbar-icons{
+                display: none;
+            }
+
+            .header-logo{
+                background: white;
+            }
+
+            .header-icons,.header-nav{
+                border: none;
+            }
+
+            .navbar-btn,.search-btn{
+                &:hover{
+                    color: $orange-clr;
+                    @include easeOut();
+                }
+            }
+        }
+    }
+    .services-grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .contact-col-grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+// large size
+@include mediaLg{
+    // Main Header
+    #main-header{
+        .main-header-grid{
+            grid-template-areas:
+            'logo-area logo-area logo-area'
+            'nav-area nav-area icons-area';
+
+            .header-logo{
+                background: $light-clr;
+            }
+
+            .logo-sm,.navbar-btn,.search-btn{
+                display: none;
+                
+            }
+        }
+    }
+
+    .services-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-col-grid{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+// extra large size
+@include mediaXl{
+    .services-grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
