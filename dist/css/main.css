@@ -328,7 +328,7 @@
   #main-header .main-header-grid {
     grid-template-areas: 'logo-area logo-area logo-area' 'nav-area nav-area icons-area'; }
     #main-header .main-header-grid .header-logo {
-      background: #f8f9fa; }
+      background: #f5f5f5; }
     #main-header .main-header-grid .logo-sm, #main-header .main-header-grid .navbar-btn, #main-header .main-header-grid .search-btn {
       display: none; }
   .services-grid {
@@ -386,3 +386,6 @@
   width: 120px;
   height: 2px;
   background: #ff7043; }
+
+.bg-light {
+  background: #f5f5f5 !important; }
